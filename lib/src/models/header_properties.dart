@@ -8,13 +8,18 @@ class HeaderProperties {
   /// - navigatorDecoration, changes the decoration of navigator.
   final NavigatorDecoration? navigatorDecoration;
 
-  HeaderProperties({
+  /// - hide, hide header properties
+  final bool hide;
+
+  const HeaderProperties({
+    this.hide = false,
     this.monthYearDecoration,
     this.navigatorDecoration,
   });
 
   Map<String, dynamic> toMap() {
     return {
+      'hide': hide,
       'monthYearDecoration': monthYearDecoration,
       'navigatorDecoration': navigatorDecoration,
     };

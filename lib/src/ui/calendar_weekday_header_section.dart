@@ -20,18 +20,21 @@ class CalendarWeekdayHeaderSection extends StatelessWidget {
         getWeekdaysDecorationListBasedOnStartingWeekday(
             startWeekday: calendarProperties.startWeekday,
             weekdaysProperties: calendarProperties.weekdaysProperties);
-    return GridView.builder(
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        childAspectRatio: 1,
-        crossAxisCount: 7,
-        mainAxisExtent: 40,
-      ),
-      itemCount: calendarProperties.weekdaysSymbol.toMap().length,
-      physics: const NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      itemBuilder: (context, index) => CalendarWeekdaySymbol(
-        symbol: weekdaysSymbolsList[index],
-        weekdayDecoration: weekdaysDecorationsList[index],
+    return Container(
+      height: 48,
+      child: GridView.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          childAspectRatio: 1,
+          crossAxisCount: 7,
+          mainAxisExtent: 40,
+        ),
+        itemCount: calendarProperties.weekdaysSymbol.toMap().length,
+        physics: const NeverScrollableScrollPhysics(),
+        shrinkWrap: true,
+        itemBuilder: (context, index) => CalendarWeekdaySymbol(
+          symbol: weekdaysSymbolsList[index],
+          weekdayDecoration: weekdaysDecorationsList[index],
+        ),
       ),
     );
   }

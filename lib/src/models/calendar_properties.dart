@@ -174,6 +174,7 @@ class CalendarProperties {
 
         /// Setting header properties.
         headerProperties = HeaderProperties(
+          hide: headerProperties?.hide ?? false,
           monthYearDecoration: MonthYearDecoration(
             monthYearTextColor:
                 headerProperties?.monthYearDecoration?.monthYearTextColor ??

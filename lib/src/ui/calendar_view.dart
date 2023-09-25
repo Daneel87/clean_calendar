@@ -59,9 +59,10 @@ class _CalendarViewState extends State<CalendarView> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CalendarNavigatorHeaderSection(
-            calendarProperties: widget.calendarProperties,
-            pageControllerState: pageControllerState),
+        if (!widget.calendarProperties.headerProperties.hide)
+          CalendarNavigatorHeaderSection(
+              calendarProperties: widget.calendarProperties,
+              pageControllerState: pageControllerState),
         CalendarWeekdayHeaderSection(
             calendarProperties: widget.calendarProperties),
         CalendarDatesSection(
