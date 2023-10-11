@@ -50,7 +50,7 @@ class PageControllerState extends ChangeNotifier {
 
     _pageViewIndex = initialIndex;
 
-    _pageController =
+    _pageController = calendarProperties.pageController ??
         PageController(initialPage: _pageViewIndex, viewportFraction: 1);
 
     _pageController.addListener(() {
