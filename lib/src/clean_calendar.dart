@@ -1,4 +1,5 @@
 library clean_calendar;
+import 'package:clean_calendar/src/state/page_controller.dart';
 
 import 'package:clean_calendar/clean_calendar.dart';
 import 'package:clean_calendar/src/ui/calendar_view.dart';
