@@ -96,7 +96,7 @@ class CleanCalendar extends StatelessWidget {
   /// - onSelectedDates, A callback to get the current selected dates.
   final ValueChanged<List<DateTime>>? onSelectedDates;
 
-  final ValueChanged<PagePageControllerState>? onPageControllerState;
+  final ValueChanged<PageControllerState>? onPageControllerState;
 
   /// - onCalendarViewDate, A callback to get the current calendar view date.
   final ValueChanged<DateTime>? onCalendarViewDate;
