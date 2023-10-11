@@ -34,7 +34,7 @@ class _CalendarViewState extends State<CalendarView> {
   void initState() {
     pageControllerState = PageControllerState(widget.calendarProperties)
       ..init();
-    widget.calendarProperties.onPageControllerState?.call(PageControllerState);
+    widget.calendarProperties.onPageControllerState?.call(pageControllerState);
     super.initState();
   }
 
