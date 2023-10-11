@@ -7,6 +7,7 @@ import 'package:clean_calendar/src/models/navigator_decoration.dart';
 import 'package:clean_calendar/src/models/weekdays_decoration.dart';
 import 'package:clean_calendar/src/models/weekdays_model.dart';
 import 'package:clean_calendar/src/models/weekdays_properties.dart';
+import 'package:clean_calendar/src/state/page_controller.dart';
 import 'package:flutter/material.dart';
 
 /// - WeekDay, Provides different weekdays.
