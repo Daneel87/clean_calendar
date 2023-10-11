@@ -28,6 +28,7 @@ class CleanCalendar extends StatelessWidget {
     this.datesForStreaks,
     this.selectedDates,
     this.onSelectedDates,
+    this.onPageControllerState,
     this.onCalendarViewDate,
     this.startWeekday,
     this.weekdaysSymbol,
@@ -94,6 +95,8 @@ class CleanCalendar extends StatelessWidget {
   /// - onSelectedDates, A callback to get the current selected dates.
   final ValueChanged<List<DateTime>>? onSelectedDates;
 
+  final PageControllerState onPageControllerState;
+
   /// - onCalendarViewDate, A callback to get the current calendar view date.
   final ValueChanged<DateTime>? onCalendarViewDate;
 
@@ -136,6 +139,7 @@ class CleanCalendar extends StatelessWidget {
           datesForStreaks: datesForStreaks,
           selectedDates: selectedDates,
           onSelectedDates: onSelectedDates,
+          onPageControllerState: onPageControllerState,
           onCalendarViewDate: onCalendarViewDate,
           startWeekday: startWeekday,
           weekdaysSymbol: weekdaysSymbol,
