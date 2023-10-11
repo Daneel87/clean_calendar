@@ -127,7 +127,7 @@ class CalendarProperties {
   /// Selected dates callback.
   final ValueChanged<List<DateTime>>? onSelectedDates;
   
-  final ValueChanged<PagePageControllerState>? onPageControllerState;
+  final ValueChanged<PageControllerState>? onPageControllerState;
 
   /// Calendar current view callback.
   final ValueChanged<DateTime>? onCalendarViewDate;
