@@ -1,6 +1,6 @@
 export 'src/clean_calendar.dart' show CleanCalendar;
 
-export 'src/state/page_controller.dart'; show PageControllerState;
+export 'src/state/page_controller.dart' show PageControllerState;
 
 export 'src/models/months_model.dart' show Months;
 
